@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <title>Team Profile web page</title>
+    <style>
+        .img{
+            width: 180px;
+            border-radius: 15px;
+            height:180px;
+            object-fit: cover;
+        }
+        .qoute{
+            background-color: #e9f2ff;
+            border-left: 5px solid #0d6efd;
+            padding: 25px;
+            font-style: italic;
+            font-size: 1.2rem;
+    
+        }
+        .status-active {
+            color: green;
+            font-weight: bold;
+        }
+        .status-leave {
+            color: orange;
+            font-weight: bold;
+        }
+        .status-resigned {
+            color: red;
+            font-weight: bold;
+        }
+        .ordered-list{
+            text-align: left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-4">
+            <h3 class="fw-bold text-dark">Team Profile</h3>
+        </div>
+        <blockquote class="blockquote text-right">
+            <p class="blockquote-footer text-primary">"Together Everyone Achieves More" – John C. Maxwell</p>
+        </blockquote>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4WybBPQ4NHiVuvNwlWOoFrbolg-rOOsOxXTt3AkSZlQ&s=10" alt="Team Image" class="img mx-auto d-block"><br>
+        <div class="qoute rounded mb-4 text-center">
+            <p>"Alone we can do so little;<br>
+         together we can do so much."</p>
+        </div>
+        <h3 class="text-primary">OUR TEAM VALUES</h3>
+        <div class="ordered-list">
+            <ol>
+                <ul>
+                    <li>Teamwork</li>
+                    <li>Innovation</li>
+                    <li>Integrity</li>
+                </ul>
+            </ol>
+        </div>
+        <div class="table-responsive">
+        <table class="table table-bordered  table-hover table-striped text-center">
+            <thead class="thead-dark">
+                <tr>
+                    <th>Name</th>
+                    <th>Role</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>John Doe</td>
+                    <td>Team Leader</td>
+                    <td class="status-active">Active</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>Developer</td>
+                    <td class="status-leave">On Leave</td>
+                </tr>
+                <tr>
+                    <td>Michael</td>
+                    <td>Designer</td>
+                    <td class="status-resigned">Resigned</td>
+                </tr>
+            </tbody>
+        </table>  
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            <button type="button" class="close" data-dismiss="alert">&times;</button>⚠️ Warning: Some employees are not currently active.
+        </div>
+    </div>
+            
+</body>
+</html>
